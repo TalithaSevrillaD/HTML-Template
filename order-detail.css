@@ -1,13 +1,7 @@
-/* body {
+body {
     background-color: white;
-    margin: 0; 
-} */
-
-body{
-    background: #EBEBEB;
-    overflow-y: scroll;
-    overflow-x: hidden;
- }
+    margin: 0px; 
+}
 
 *{
     margin: 0px;
@@ -300,21 +294,18 @@ fa-search {
     margin: auto;
     
 }
- 
- /* #sidebar{
-    background: #DEDEDE;
-    width: 200px;
-    float: right;
-    position: fixed;
-    padding: 5px;
-    height: 250px;
- } */
+
+#wrapper{
+    width: 1000px;
+    margin-left: 50px;
+    color: black;
+}
 
 #content {
     margin-top: 5%;
-    width: 760px;
-    margin-left: 250px;
-    padding: 20px;
+    width: 950px;
+    margin-left: 155px;
+    padding: 10px;
     background: #D570FA;
     border: 10px #8414ad solid;
     box-shadow: 6px 6px 6px rgba(0,0,0,0.8);
@@ -323,46 +314,73 @@ fa-search {
     text-align: left;
     border-radius: 30px;
 }
-#content img {
-    width: auto;
-    height: 250px;
-    margin-left: 130px;
-}
 #content h2 {
     text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
 }
 #content p {
     padding: 10px;
     font-size: 16px;
     text-align: left;
 }
-center {
-    padding-top: 18px;
+.table1, th, td {
+    border: 1px solid #999;
+    padding: 8px 20px;
 }
-center a{
-    display: inline-block;
-    padding: 10px 16px;
-    font-size: 20px;
+.table1 {
+	font-family: sans-serif;
+	color: #232323;
+        border-collapse: collapse;
+}
+.table1 {
+    margin-left: 15px;
+    font-family: sans-serif;
+    width: 97%;
+    border: #E7A9FE 5px solid;
+    padding: 0%;
+    margin-bottom: 5%;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.8);
+}
+ .table1 tr th{
+    background: #E7A9FE;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.table1 tr {
+    color: black;
+    font-weight: bold;
+}
+.table1 tr td {
+    background-color: white;
 }
 
-center a:hover {
-    background-color: rgb(187, 100, 237);
-    color: black;
-    text-decoration: none;
+.table1 .color {
+    background-color: #F0CBFE;
+    text-align: right;
+    padding-right: 10px;
 }
-
-center .previous {
-    background-color: #E7A9FE;
-    color: black;
-    border-radius: 5px;
+.table1 tr td img {
+    width: 100px;
+    height: auto;
 }
-center .next {
-    background-color: #E7A9FE;
-    color: black;
-    border-radius: 5px;
+.table1, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+.table1 .subtotal {
+    background-color: #F0CBFE;
+}
+.table1 .icon {
+    width: 30px;
+    height: auto;
+}
+.table1 tr:nth-child(even) {
+    background-color: white;
 }
 .footer {
-    margin-top: 3%;
+    margin-top: 4%;
     background: #3a1547;
     color: #d3d3d3;
     height:400px ;
