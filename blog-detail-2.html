@@ -5,115 +5,86 @@
         <meta name="viewport" content="width=device-width, initialscale=1.0">
         <metta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="blog-detail.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <style>.carousel-inner > .item > img,.carousel-inner > .item > a > img { width: 80%; margin: auto;}</style>
     </head>
 <body>
-    <div class="all">
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <div class="menu-header-1">
-                <div class="a">
-                    <ul>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html" class="active">Daftar</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Homeindex.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product-index.html">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog-index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagedetails.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-detail.html">My Order</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                 </div>
-                <!-- <div class="b">
-
-                </div> -->
-                <!-- <div class="c">
-                    <a href="#">Lihat Status Transaksi</a>
-                </div> -->
-            </div>
-            <form>
-                <input class="search" type="text" placeholder="Cari..." required>
-                    <button type="submit">
-                        <i class="fa fa-search">
-                        </i>
-                    </button>
-            </form>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline my-2 my-sm-0" type="submit" style="color: black;">Search</button>
+          </form>
         </div>
-        <div class="header-2">
-            <div class="menu-header-2">
-                <!-- <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul> -->
-            </div>
-            <div class="menu-header-2a">
-                <ul>
-                    <ul>
-                        <li><a href="Homeindex.html">Home</a></li>
-                        <li><a href="product-index.html">Product</a></li>
-                        <li><a href="blog-index.html">Blog</a></li>
-                        <li><a href="pagedetails.html">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="order-detail.html">Order</a></li>
-                    </ul>
-                    <!-- <li><a href="#">E-voucher dan tiket</a></li>
-                    <li><a href="#">E-voucher dan tiket</a></li>
-                    <li><a href="#">E-voucher dan tiket</a></li> -->
-                    <!-- <li><a href="#">E-voucher dan tiker</a></li>
-                    <li><a href="#">E-voucher dan tiker</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div id="wrapper">
-        <!-- <h2>About Us</h2><br> -->
-       <!-- <div id="sidebar">
-            <ul>
-                <li><a href="#">Sneakers</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Higheels</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Flat Shoes</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Converse</a></li>
-            </ul>
-       </div> -->
- 
-       <div id="content">
-            <h2>Shoes Is A Statement Of All</h2>
-            <img src="images/artikel1.jpg">
-            <hr color ="solid black" align="center"/>
-            <p>
-                In today's fashion world shoes have to be more versatile than ever. 
-                Unless you stay home all the time, it's likely that you have to wear 
-                shoes of some sort every day. The designers of the fashion world have responded
-                with shoes for every occasion; even for those that don't like to wear shoes.
-                In the world of business shoes that won't blister your feet are very important. 
-                Many women that walk any distance bring tennis shoes for the walk and change into
-                dress shoes once they arrive at their place of employment. When they do make that 
-                change, it's not often that you'll see them change into any type of high heel. 
-            </p>
-            <p>
-                If attending an event such as a wedding or other banquet type party, the 
-                high heeled shoes make a grand return. Most women will wear them to complement their dresses.
-                They will either match or contrast with the dress that they have chosen to wear.
-                Tennis shoes are a favorite when doing things like gardening, shopping, cleaning the house,
-                etcetera. These shoes provide comfort and protection to the feet. If a woman is working in
-                the yard or playing a game the tennis shoes will protect her feet while keeping them 
-                comfortable. If she is spending the day shopping tennis shoes will make her day easier on 
-                her at the end when she's walked for many hours. Sandals are the shoes of summer. Nicely 
-                pedicured feet are just waiting to show off in those shoes that are nothing much more 
-                than padding and straps. Toes are painted a variety of colors which adorn the clothing 
-                and style choices.
-            </p>
-        </div>
-    </div>
+      </nav>
+      
+      <div class="about-section">
+        <h1>Shoes Is A Statement Of All</h1>
+        <img src="images/artikel1.jpg" class="img-fluid"><br>
+        <div class="dropdown-divider"></div> 
+        <p> In today's fashion world shoes have to be more versatile than ever. 
+            Unless you stay home all the time, it's likely that you have to wear 
+            shoes of some sort every day. The designers of the fashion world have responded
+            with shoes for every occasion; even for those that don't like to wear shoes.
+            In the world of business shoes that won't blister your feet are very important. 
+            Many women that walk any distance bring tennis shoes for the walk and change into
+            dress shoes once they arrive at their place of employment. When they do make that 
+            change, it's not often that you'll see them change into any type of high heel. </p>
+        <p> If attending an event such as a wedding or other banquet type party, the 
+            high heeled shoes make a grand return. Most women will wear them to complement their dresses.
+            They will either match or contrast with the dress that they have chosen to wear.
+            Tennis shoes are a favorite when doing things like gardening, shopping, cleaning the house,
+            etcetera. These shoes provide comfort and protection to the feet. If a woman is working in
+            the yard or playing a game the tennis shoes will protect her feet while keeping them 
+            comfortable. If she is spending the day shopping tennis shoes will make her day easier on 
+            her at the end when she's walked for many hours. Sandals are the shoes of summer. Nicely 
+            pedicured feet are just waiting to show off in those shoes that are nothing much more 
+            than padding and straps. Toes are painted a variety of colors which adorn the clothing 
+            and style choices.</p>
+      </div>
     <center>
         <a href="blog-detail-1.html" class="previous">&laquo;Previous</a>
         <a href="#" class="next">Next&raquo;</a>

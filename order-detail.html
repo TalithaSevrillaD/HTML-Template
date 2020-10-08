@@ -4,106 +4,173 @@
         <title>Seventeen's</title>
         <meta name="viewport" content="width=device-width, initialscale=1.0">
         <metta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="order-detail.css">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>            <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="blog-detail.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <style>.carousel-inner > .item > img,.carousel-inner > .item > a > img { width: 80%; margin: auto;}</style>
     </head>
 <body>
-    <div class="all">
-        <div class="header">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <div class="menu-header-1">
-                <div class="a">
-                    <ul>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html" class="active">Daftar</a></li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Homeindex.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product-index.html">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog-index.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pagedetails.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-detail.html">My Order</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="register.html">Register</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                 </div>
-                <!-- <div class="b">
-
-                </div> -->
-                <!-- <div class="c">
-                    <a href="#">Lihat Status Transaksi</a>
-                </div> -->
-            </div>
-            <form>
-                <input class="search" type="text" placeholder="Cari..." required>
-                    <button type="submit">
-                        <i class="fa fa-search">
-                        </i>
-                    </button>
-            </form>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline my-2 my-sm-0" type="submit" style="color: black;">Search</button>
+          </form>
         </div>
-        <div class="header-2">
-            <div class="menu-header-2">
-                <!-- <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul> -->
-            </div>
-            <div class="menu-header-2a">
-                <ul>
-                    <ul>
-                        <li><a href="Homeindex.html">Home</a></li>
-                        <li><a href="product-index.html">Product</a></li>
-                        <li><a href="blog-index.html">Blog</a></li>
-                        <li><a href="pagedetails.html">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="order-detail.html">Order</a></li>
-                    </ul>
-                    <!-- <li><a href="#">E-voucher dan tiket</a></li>
-                    <li><a href="#">E-voucher dan tiket</a></li>
-                    <li><a href="#">E-voucher dan tiket</a></li> -->
-                    <!-- <li><a href="#">E-voucher dan tiker</a></li>
-                    <li><a href="#">E-voucher dan tiker</a></li> -->
-                </ul>
-            </div>
+      </nav>
+      <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th style="width:50%">Product</th>
+                                <th style="width:10%">Price</th>
+                                <th style="width:8%">Quantity</th>
+                                <th style="width:22%" class="text-center">Subtotal</th>
+                                <th style="width:10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="images/sepatupink.jpg" alt="..." class="img-responsive"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">Sepatu Pink</h4>
+                                            <p> It’s the perfect selection for a formal occasion and goes best with a suit.
+                                                Paired up with a black, navy blue or grey suit and a white shirt and tie, this shoe is the perfect
+                                                accompaniment for any formal outfit, be it for an important meeting or an office party.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">Rp 200.000,00</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td data-th="Subtotal" class="text-center">Rp 200.000,00</td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="images/sepatubirumuda.jpg" alt="..." class="img-responsive"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">Sepatu Biru</h4>
+                                            <p> It’s the perfect selection for a formal occasion and goes best with a suit.
+                                                Paired up with a black, navy blue or grey suit and a white shirt and tie, this shoe is the perfect
+                                                accompaniment for any formal outfit, be it for an important meeting or an office party.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">Rp 150.000,00</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td data-th="Subtotal" class="text-center">Rp 200.000,00</td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="visible-xs">
+                                <td class="text-center"><strong>Total Rp 200.000,00</strong></td>
+                            </tr>
+                            <tr>
+                                <td><a href="product-index.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                                <td colspan="2" class="hidden-xs"></td>
+                                <td class="hidden-xs text-center"><strong>Total Rp 350.000,00</strong></td>
+                                <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+             </div>
         </div>
-    </div>
-    <div id="wrapper">
- 
-        <div id="content">
-             <h2>Detail Order</h2>
-             <hr color ="solid black" align="center"/>
-             <table class="table1" rules="all">
+    <!-- <div class="about-section">
+        <table class="table table-bordered table-light table-striped">
+            <h1>Detail Order</h1>
+            <div class="dropdown-divider"></div>
+            <thead>
+            <tr >
+                <th scope="col">Gambar</th>
+                <th scope="col">Produk</th>
+                <th scope="col">Jumlah</th>
+                <th scope="col">Total</th>
+                <th scope="col">Edit</th>
+            </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <th>Gambar</th>
-                    <th>Produk</th>
-                    <th>Jumlah</th>
-                    <th>Total</th>
-                    <th>Edit</th>
-                </tr>
-                <tr>
-                    <td><img src="images/sepatupink.jpg"></td>
+                    <th scope="row"><img src="images/sepatupink.jpg" class="img-fluid"></th>
                     <td>Sepatu Pink</td>
                     <td>1</td>
                     <td>Rp 200.000,00</td>
-                    <td><a href="#"><img src="images/iconsampah.png" class="icon"></a></td>
+                    <td><a href="#"><img src="images/iconsampah.png" class="icon img-fluid"></a></td>
+                </tr>
+                <tr >
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="color" >Subtotal</td>
-                    <td colspan="2" class="subtotal" >Rp 200.000,00</td>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
                 </tr>
-                <tr>
-                    <td colspan="3" style="text-align: right; padding-right: 10px;">Ongkos Kirim</td>
-                    <td colspan="2" >Rp 12.000,00</td>
-                </tr>
-                <tr>
-                    <td colspan="3" class="color" >Total Keseluruhan</td>
-                    <td colspan="2" class="subtotal" >Rp 212.000,00</td>
-                </tr>
-            </table>
-         </div>
-     </div>
-     <div class="footer">
+            </tbody>
+        </table>
+    </div> -->
+    <div class="footer">
         <div class="footer-content">
             <div class="footer-section about">
                 <h1 class="logo-text"><span>Seven</span>Teen</h1>
