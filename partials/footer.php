@@ -52,9 +52,12 @@
                 <a href="pagedetails.html">
                     <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="contact.html">
                     <li>Contact</li>
                 </a>
+                <a href="testi.html">
+                      <li>Testimonial</li>
+                    </a>
             </ul>
         </div>
         <div class="footer-section contact-form">
